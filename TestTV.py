@@ -4,4 +4,4 @@
 from ClassTV import TV
 
 television = TV()
-television.start()
+television.Start()
