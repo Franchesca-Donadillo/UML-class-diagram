@@ -2,18 +2,18 @@
 # BSCPE 1-5
 
 from ClassTV import TV
-from ClassTV import Start
-
-# importing Start
-welcome = Start()
-welcome.start()
 
 # importing the class TV
-television = TV()
+tv_1 = TV()
 
-# adding objects
+# call
+tv_1.get_channel()
+print(tv_1.set_channel(channel = int()))
 
-# call 
+
+
+
+
 
 
 
