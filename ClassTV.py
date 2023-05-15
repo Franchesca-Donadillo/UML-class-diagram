@@ -1,34 +1,44 @@
+# Franchesca Marie U. Donadillo
+# BSCPE 1-5
+
 # assign class
 class TV():
 
     # constructor
-    def __init__(self, channel: int , volume_level: int, on: bool):
+    #instance variables
+    def __init__(self, channel , volume_level, on):
         self.channel = channel
         self.volume_level = volume_level
         self.on = on
 
     # define start
-    def Start(self):
+    def start(self):
         start_tv = input("WELCOME! Press any key to start. ")
         return start_tv
-       
-    def GetChannel(self):
-    
-        def SetChannel(self, channel):
-            self.channel = channel
-            print(int(f"volume level is {self.channel}"))
 
-    def GetVolume(self):
-        
-        def SetVolume(self, volume_level):
-            self.volume_level = volume_level
-            print(int(f"volume level is {self.volume_level}"))
+    # behaviour 
+    def get_channel(self):
+        return self.channel
     
-    def PowerBut(self):
-        def TurnOn(self):
-            return  True
+    def set_channel(self, channel):
+        if channel >= 1 and channel <=120:
+            self.channel = channel
+            print(f"volume level is {self.channel}")
+
+    def get_volume(self):
+        return self.volume_level
         
-        def TurnOff(self):
+    def set_volume(self, volume_level):
+        if volume_level >= 1 and volume_level <= 7:
+            self.volume_level = volume_level
+            print(f"volume level is {self.volume_level}")
+
+    def turn_on(self):
+        if self.on == "on":
+            return True
+
+    def turn_off(self):
+        if self.on == "off":
             return False
     
 
