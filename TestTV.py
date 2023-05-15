@@ -6,10 +6,15 @@ from ClassTV import TV
 # importing the class TV
 tv_1 = TV()
 
-# call
-tv_1.get_channel()
-print(tv_1.set_channel(channel = int()))
+# call channel
+tv_1.get_channel() 
+tv_1.set_channel(channel = int())
 
+# call volume
+tv_1.get_volume()
+tv_1.set_volume(volume_level= int())
+
+print(f"tv_1's channel is {tv_1.set_channel} and volume level is {tv_1.set_volume}")
 
 
 
