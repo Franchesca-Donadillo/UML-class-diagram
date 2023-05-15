@@ -1,22 +1,31 @@
 # Franchesca Marie U. Donadillo
 # BSCPE 1-5
 
-# assign class
-class TV():
-
-    # constructor
-    #instance variables
-    def __init__(self, channel , volume_level, on):
-        self.channel = channel
-        self.volume_level = volume_level
-        self.on = on
-
-    # define start
+class Start():
+# define start
     def start(self):
         start_tv = input("WELCOME! Press any key to start. ")
         return start_tv
 
-    # behaviour 
+# assign class
+class TV():
+
+    # constructor
+    #instance variables with user input
+    def __init__(self):
+        self.on = bool("Enter on/off. ")
+        self.channel = int(input("Enter your desired channel number. "))
+        self.volume_level = int(input("Enter your desired volume level. "))
+        
+      # behaviour 
+    def turn_on_off(self):
+        if self.on == "on":
+            return True
+
+    def turn_off(self):
+        if self.on == "off":
+            return False
+
     def get_channel(self):
         return self.channel
     
@@ -33,13 +42,7 @@ class TV():
             self.volume_level = volume_level
             print(f"volume level is {self.volume_level}")
 
-    def turn_on(self):
-        if self.on == "on":
-            return True
-
-    def turn_off(self):
-        if self.on == "off":
-            return False
+   
     
 
     

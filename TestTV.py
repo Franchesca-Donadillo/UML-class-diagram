@@ -2,15 +2,18 @@
 # BSCPE 1-5
 
 from ClassTV import TV
+from ClassTV import Start
 
+# importing Start
+welcome = Start()
+welcome.start()
+
+# importing the class TV
 television = TV()
-television.Start()
 
-# creating tv_1 as object
-tv_1 = television(30, 3, "on")
-tv_1.GetChannel()
+# adding objects
 
-# creating tv_2 as object
-tv_2 = television(3, 2, "on")
+# call 
+
 
 
