@@ -6,10 +6,11 @@ from ClassTV import TV
 television = TV()
 television.Start()
 
-while True:
-    ask_user = television.AskUser()
+# creating tv_1 as object
+tv_1 = television(30, 3, "on")
+tv_1.GetChannel()
 
-    # create tv_1
-    tv_1 = TV()
-    tv_1.channel = channel
-    print(tv_1.channel)
+# creating tv_2 as object
+tv_2 = television(3, 2, "on")
+
+
