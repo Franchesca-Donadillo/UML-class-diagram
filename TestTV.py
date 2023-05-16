@@ -29,12 +29,14 @@ print("tv_2's", end = " ")
 tv_2.set_channel(1)
 tv_2.set_volume(1)
 
-
+# volume and channel trial
 tv_1.channel_up()
 tv_1.volume_up()
 
 tv_2.channel_down()
 tv_2.volume_down()
+
+
 
 
 

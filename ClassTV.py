@@ -1,6 +1,7 @@
 # Franchesca Marie U. Donadillo
 # BSCPE 1-5
 
+# import termcolor for colors
 from termcolor import colored, cprint
 
 # assign class
@@ -46,11 +47,11 @@ class TV:
             
     def channel_up(self):
         self.channel += 1
-        cprint(colored("*"*80), "grey")
+        cprint(colored("\n" + "*"*80), "grey")
         cprint(colored(f"The current television channel is {self.channel}"),"yellow", end = " ")
     
     def channel_down(self):
-        cprint(colored("*"*80), "grey")
+        cprint(colored("\n" + "*"*80), "grey")
         self.channel -= 1
         cprint(colored(f"The current television channel is {self.channel}"), "magenta" , end = " ")
 
