@@ -8,13 +8,13 @@ tv_1 = TV()
 
 # call channel
 tv_1.get_channel() 
-tv_1.set_channel(channel = int())
+tv_1.set_channel(channel_tv = int())
 
 # call volume
 tv_1.get_volume()
-tv_1.set_volume(volume_level= int())
+tv_1.set_volume(volume_level_tv = int())
 
-print(f"tv_1's channel is {tv_1.set_channel} and volume level is {tv_1.set_volume}")
+print(f"tv_1's channel is {tv_1.set_channel(channel_tv = int())} and volume level is {tv_1.set_volume(volume_level_tv = int())}")
 
 
 
