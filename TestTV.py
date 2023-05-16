@@ -13,12 +13,19 @@ tv_2 = TV(channel_tv= 3, volume_level_tv= 2, on_tv= "on")
 
 
 # calling object 1
+print("tv_1's", end = " ")
 tv_1.set_channel(1)  
 tv_1.set_volume(1)
 
 # calling object 2
+print("tv_2's", end = " ")
 tv_2.set_channel(1)
 tv_2.set_volume(1)
+
+tv_1.channel_up()
+tv_1.volume_up()
+
+
 
 
 
