@@ -2,10 +2,11 @@
 # BSCPE 1-5
 
 import pyfiglet
+from termcolor import colored, cprint
 
 # title
-title = pyfiglet.figlet_format("\n" + "="*2 + " TV " + "="*2, font="slant")
-print(title)
+title = pyfiglet.figlet_format("="*2 + " TV " + "="*2, font="slant")
+cprint(colored((title), "red", attrs= ["bold"]))
 
 # importing the class TV
 from ClassTV import TV
@@ -29,9 +30,11 @@ tv_2.set_channel(1)
 tv_2.set_volume(1)
 
 
+tv_1.channel_up()
+tv_1.volume_up()
 
-
-
+tv_2.channel_down()
+tv_2.volume_down()
 
 
 
