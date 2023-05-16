@@ -4,17 +4,18 @@
 from ClassTV import TV
 
 # importing the class TV
-tv_1 = TV()
+tv_1 = TV(channel_tv = int(), volume_level_tv= int(), on_tv= int())
 
 # call channel
 tv_1.get_channel() 
-tv_1.set_channel(channel_tv = int())
+tv_1.set_channel(channel_get = int())
 
 # call volume
 tv_1.get_volume()
-tv_1.set_volume(volume_level_tv = int())
+tv_1.set_volume(volume_level_get = int())
 
-print(f"tv_1's channel is {tv_1.set_channel(channel_tv = int())} and volume level is {tv_1.set_volume(volume_level_tv = int())}")
+tv_1_1 = TV(channel_tv= int(), volume_level_tv= int(), on_tv= " ")
+print(f"tv_1's channel is {tv_1_1.channel}")
 
 
 

@@ -6,7 +6,7 @@ class TV:
 
     # constructor
     #instance variables with user input
-    def __init__(self):
+    def __init__(self, channel_tv,volume_level_tv, on_tv):
         
         channel_tv = int(input("Enter your desired channel number (1-120). "))
         volume_level_tv = int(input("Enter your desired volume level. (1-7) "))
@@ -27,20 +27,21 @@ class TV:
 
     def get_channel(self):
         channel_get = self.channel
-        return self.channel
+        return channel_get
         
-    def set_channel(self, channel_tv):
-        if channel_tv >= 1 and channel_tv <=120:
-            channel_tv = self.channel
-            return channel_tv
+    def set_channel(self, channel_get):
+        if channel_get >= 1 and channel_get <=120:
+            channel_get = self.channel
+            return channel_get
 
     def get_volume(self):
-        return self.volume_level
+        volume_level_get = self.volume_level
+        return volume_level_get
         
-    def set_volume(self, volume_level_tv):
-        if volume_level_tv >= 1 and volume_level_tv <= 7:
-            volume_level_tv = self.volume_level
-            return volume_level_tv
+    def set_volume(self, volume_level_get):
+        if volume_level_get >= 1 and volume_level_get <= 7:
+            volume_level_get = self.volume_level
+            return volume_level_get
 
    
     
