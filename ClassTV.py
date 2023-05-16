@@ -30,8 +30,10 @@ class TV:
         return channel_get
         
     def set_channel(self, channel_get):
+        for line in range(0,2):
+                line +=1
         if channel_get >= 1 and channel_get <=120:
-            print(f"tv_1's channel is {self.channel}", end = " ")
+            print(f"tv_{line}'s channel is {self.channel}", end = " ")
 
     def get_volume(self):
         volume_level_get = self.volume_level
@@ -40,6 +42,8 @@ class TV:
     def set_volume(self, volume_level_get):
         if volume_level_get >= 1 and volume_level_get <= 7:
             print(f"and the volume level is {self.volume_level}")
+
+    
 
 
     
