@@ -17,7 +17,7 @@ class TV:
         self.on = on_tv        
         
       # behaviour 
-    def turn_on_off(self):
+    def turn_on(self):
         if self.on == "on":
             return True
 

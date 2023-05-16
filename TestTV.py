@@ -1,6 +1,12 @@
 # Franchesca Marie U. Donadillo
 # BSCPE 1-5
 
+import pyfiglet
+
+# title
+title = pyfiglet.figlet_format("\n" + "="*2 + " TV " + "="*2, font="slant")
+print(title)
+
 # importing the class TV
 from ClassTV import TV
 
@@ -22,8 +28,7 @@ print("tv_2's", end = " ")
 tv_2.set_channel(1)
 tv_2.set_volume(1)
 
-tv_1.channel_up()
-tv_1.volume_up()
+
 
 
 
